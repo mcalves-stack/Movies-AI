@@ -106,7 +106,7 @@ function createMovieLayout({
             </div>
           </div>
 
-          <button onclick="watch(event)" data-id="${id}">
+          <button  onclick="watch(event)" data-id="${id}">
             <img src="./assets/icons/Play.svg" alt="">
 
             <span>Assistir Trailer</span>
