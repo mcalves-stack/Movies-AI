@@ -8,10 +8,11 @@ async function getMovies() {
     }
   };
   try {
-    return fetch('https://api.themoviedb.org/3/movie/popular?language=pt-br-US&page=1', options)
-    .then(response => response.json())
+    const response = await fetch('https://api.themoviedb.org/3/movie/popular?language=pt-br-US&page=1', options);
+    const data = await response.json();
+    return data;
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 }
 
@@ -154,4 +155,4 @@ async function start() {
 
 }
 
-start()
+start();
